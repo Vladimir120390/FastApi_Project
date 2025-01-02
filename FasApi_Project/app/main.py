@@ -9,7 +9,7 @@ async def welcome():
 
 # Подключаем маршруты
 app.include_router(user.router, prefix="/users", tags=["users"])
-app.include_router(task.router)
+app.include_router(task.router, prefix="/tasks", tags=["tasks"])
 
 
 
